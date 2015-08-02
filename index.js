@@ -13,9 +13,7 @@ module.exports = function(file, options) {
   };
 
   return new function() {
-    var isWindows = process.platform === 'win32';
-    var homePath = process.env[isWindows ? 'USERPROFILE' : 'HOME'];
-
+    var homePath = require('user-home');
     var filePath = path.resolve(file);
 
     // default paths documentation https://www.dropbox.com/help/321

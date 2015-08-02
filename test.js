@@ -23,16 +23,20 @@ describe('dropbox', function() {
   var dropboxFile = {};
 
   var file = '.test';
-  var filePath = '/home/ewnd9/.test';
-  var dropboxPath = '/home/ewnd9/Dropbox/.test';
+
+  var userDir = require('user-home');
+  var dropboxDir = path.join(userDir, 'Dropbox');
+
+  var filePath = path.join(userDir, file);
+  var dropboxPath = path.join(dropboxDir, file);
 
   it('should copy from dropbox', function() {
-    var mockedFs = initFs({
-      '/home/ewnd9/Dropbox': {
-        '.test': dropboxFile,
-      }
-    });
+    var struct = {};
+    struct[dropboxDir] = {
+      '.test': dropboxFile,
+    };
 
+    var mockedFs = initFs(struct);
     expect(mockedFs.existsSync(filePath)).to.equal(false);
 
     var lib = initLib(mockedFs)(filePath);
@@ -43,12 +47,12 @@ describe('dropbox', function() {
   });
 
   it('should copy to dropbox', function() {
-    var mockedFs = initFs({
-      '/home/ewnd9': {
-        '.test': dropboxFile,
-      }
-    });
+    var struct = {};
+    struct[userDir] = {
+      '.test': dropboxFile,
+    };
 
+    var mockedFs = initFs(struct);
     expect(mockedFs.existsSync(dropboxPath)).to.equal(false);
 
     var lib = initLib(mockedFs)(filePath);

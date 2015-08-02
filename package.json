@@ -18,7 +18,8 @@
   "author": "ewnd9 <ewndnine@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "symlink-or-copy": "^1.0.1"
+    "symlink-or-copy": "^1.0.1",
+    "user-home": "^2.0.0"
   },
   "devDependencies": {
     "chai": "^3.2.0",
