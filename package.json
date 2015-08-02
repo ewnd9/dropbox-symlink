@@ -1,6 +1,6 @@
 {
   "name": "dropbox-symlink",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "symlink files to dropbox folder",
   "main": "index.js",
   "scripts": {
