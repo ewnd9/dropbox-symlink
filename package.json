@@ -12,7 +12,8 @@
     "url": "git+https://github.com/ewnd9/dropbox-symlink.git"
   },
   "keywords": [
-    "INSERT_KEYWORDS"
+    "dropbox",
+    "symlink"
   ],
   "author": "ewnd9 <ewndnine@gmail.com>",
   "license": "MIT",
