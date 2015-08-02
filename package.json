@@ -1,0 +1,27 @@
+{
+  "name": "dropbox-symlink",
+  "version": "0.0.1",
+  "description": "symlink files to dropbox folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "preferGlobal": "false",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewnd9/dropbox-symlink.git"
+  },
+  "keywords": [
+    "INSERT_KEYWORDS"
+  ],
+  "author": "ewnd9 <ewndnine@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "symlink-or-copy": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "fs-mock": "^1.2.1",
+    "proxyquire": "^1.6.0"
+  }
+}
