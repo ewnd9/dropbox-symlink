@@ -18,7 +18,7 @@ module.exports = function(file, options) {
 
     // default paths documentation https://www.dropbox.com/help/321
     var dropboxPath = path.join(homePath, 'Dropbox');
-    var dropboxFilePath = path.join(dropboxPath, path.basename(file));
+    var dropboxFilePath = this.dropboxFile = path.join(dropboxPath, path.basename(file));
 
     var hasDropbox = this.exists = fs.existsSync(dropboxPath);
     var hasDropboxFile = this.fileExists = hasDropbox && fs.existsSync(dropboxFilePath);

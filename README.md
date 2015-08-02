@@ -4,7 +4,7 @@
 
 > Experimenting with dropbox-as-a-backend
 
-Symlink files to local dropbox folder (Supports only Mac And Linux)
+Symlink files to/from local dropbox folder (Supports only Mac And Linux)
 
 ## Install
 
@@ -28,6 +28,7 @@ var dropbox = require('dropbox-symlink')(filePath, {
 
 dropbox.exists; // is default dropbox folder finded in system
 dropbox.fileExists; // is file already in dropbox folder
+dropbox.dropboxFile; // absolute path to dropbox symlink
 
 if (dropbox.exists) {
   if (!dropbox.fileExists && fs.existsSync(filePath)) {

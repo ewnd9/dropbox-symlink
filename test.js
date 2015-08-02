@@ -30,6 +30,11 @@ describe('dropbox', function() {
   var filePath = path.join(userDir, file);
   var dropboxPath = path.join(dropboxDir, file);
 
+  it('should show dropbox file path', function() {
+    var lib = initLib(initFs({}))(filePath);
+    expect(lib.dropboxFile).to.equal(dropboxPath);
+  });
+
   it('should copy from dropbox', function() {
     var struct = {};
     struct[dropboxDir] = {
