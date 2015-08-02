@@ -1,6 +1,6 @@
 # dropbox-symlink
 
-│[![Build Status](https://travis-ci.org/ewnd9/dropbox-symlink.svg?branch=master)](https://travis-ci.org/ewnd9/dropbox-symlink)
+[![Build Status](https://travis-ci.org/ewnd9/dropbox-symlink.svg?branch=master)](https://travis-ci.org/ewnd9/dropbox-symlink)
 
 > Experimenting with dropbox-as-a-backend
 
