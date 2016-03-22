@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/ewnd9/dropbox-symlink.svg?branch=master)](https://travis-ci.org/ewnd9/dropbox-symlink)
 
+:warning: Deprecation notice: bad idea, users who care would link files to their storages by themselves, so better put effort to show config files location in `--help` 
+
 > Experimenting with dropbox-as-a-backend
 
 Symlink files to/from local dropbox folder (Supports only Mac And Linux)
